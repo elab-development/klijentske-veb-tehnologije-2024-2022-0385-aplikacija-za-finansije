@@ -1,0 +1,68 @@
+/* Navbar container */
+.nav {
+    height: 100vh;
+    padding: 15px 25px 15px 0px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1000;
+    
+}
+
+
+.nav ul {
+    
+    list-style: none; /* Remove default list styling */
+    height: 25vh;
+    width: 17vh;
+    border: 3px solid #141313;
+    border-left: none;
+	filter: drop-shadow(0 0 0.05em #514638);
+    margin: 0;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #1c1a1a;
+    padding: 0;
+    padding-right: 15px;
+    padding-block: 10px;
+    display: flex; /* Flexbox to align list items horizontally */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.2em; 
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #2f2b2b;
+    color: #fff;
+}
+
+.nav a.active {
+    background-color: #2e96ff;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 10px; /* Adjust space between links */
+    }
+}

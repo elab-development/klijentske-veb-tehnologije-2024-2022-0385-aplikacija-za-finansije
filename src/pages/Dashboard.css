@@ -1,0 +1,194 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    overflow: hidden;
+    /* background-image: radial-gradient(
+        circle at center, 
+        #1f2c2b 60%, 
+        #2b3d3b 80%, 
+        #405755
+    ); */
+    /* background-image: 
+        radial-gradient(
+            circle at center, 
+            #7b5116 65%,
+            #9c6d2c 85%,
+            #aa7a38 95%,
+            #b2823f
+        ); */
+    background-image: 
+        radial-gradient(
+            circle at center,
+            #131c25 60%, 
+            #223140
+        );
+}
+
+text{
+    fill: white;
+    font-weight: 500;
+}
+.MuiChartsGrid-root > line{
+    color:white;
+    fill: white;
+
+}
+
+.buttonSpent, .buttonIncome{
+    width: 8.3em;
+    height: 2.3em;
+    background-color: #ce8807;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #242424;
+    border: transparent;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.buttonSpent:hover, .buttonIncome:hover{
+    background-color: #de9a1b;
+    transform: scale(1.05);
+}
+/* 050024 */
+fieldset{
+    padding: 15px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 7%;
+    border-radius: 4px;
+    background-color: #1c1a1a;
+    border: 3px solid #141313;
+    filter: drop-shadow(0 0 0.15em #514638);
+}
+fieldset:hover{
+    background-color: #1f1d1d;
+}
+tspan{
+    color: white;
+    background-color: white;
+}
+span{
+    margin-left: 0.3em;
+}
+.graph{
+    left: -7%;
+    top: 0.5em;
+    position: relative;;
+    
+}
+
+::-webkit-scrollbar{
+    background-color: #191717;
+    border-radius: 5px;
+    width: 13px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ce8807;
+    border-radius: 5px;
+}
+
+
+h1{
+    background-color: transparent;
+    position: relative;
+    font-size: 25px;
+    top: 40px;
+}
+.transactionsList{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    width: 60%;
+    height: 40vh;
+    background-color: #1c1a1a;
+    border: 3px solid #141313;
+    filter: drop-shadow(0 0 0.15em #514638);
+    
+    padding-inline: 15px;
+    padding-block: 10px;
+
+    margin: 1em;
+    margin-left: calc(20% - 50px);
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    cursor: crosshair;
+    
+}
+.transactionsList label{
+    margin-top: 1em;
+    align-self: center;
+    font-size: 1.1em;
+    text-decoration: underline;
+    font-weight: 450;
+}
+.transactionsList:hover{
+    background-color: #1f1d1d;
+}
+
+.wrapperList{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+span{
+    color: #6fb4f9;
+    font-size: 0.95em;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 55em;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 3em;
+    align-items: start;
+    margin-right: 5em;
+    margin-left: 1em;
+}
+.income, .spent, .balance{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20em;
+}
+legend{
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 7px;
+    padding-inline: 10px;
+}
+legend:hover{
+    background-color: #191717;
+}
+
+
+.dropDown{
+    margin-left: 3.5%;
+    border-radius: 5px;
+    border: transparent;
+    height: 1.8em;
+    width: 7em;
+    background-color: #191717;
+    font-weight: 550;
+}

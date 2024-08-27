@@ -1,0 +1,24 @@
+.tableContainer{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-top: 1px solid white;
+}
+.mantine-Table-table{
+    margin-inline: 20%;
+    margin-top: 3%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-self: center;
+    width: 80%;
+    position: relative;
+    left: -10%;
+    border-spacing: 1.5em;
+}
+.mantine-Table-tr:hover{
+    scale: 1.01;
+}
+th, .mantine-Table-caption{
+    font-weight: 500;    
+    font-family: Moderustic;
+}

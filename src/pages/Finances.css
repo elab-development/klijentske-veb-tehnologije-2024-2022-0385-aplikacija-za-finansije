@@ -1,0 +1,229 @@
+tspan{
+    fill: white;
+}
+.containerFinances{
+    background-color: #1f1d1d;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    top: 2em;
+    position: relative;
+    border-radius: 4px;
+    background-color: #1c1a1a;
+    border: 3px solid #141313;
+    filter: drop-shadow(0 0 0.15em #514638);
+
+}
+.newSubmit{
+    width: 8.3em;
+    height: 2em;
+    background-color: #3694f2;
+    border-radius: 7px;
+    padding: 5px;
+    border: transparent;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: white;
+    transition: 0.15s;
+    cursor: pointer;
+    
+}
+.newSubmit:hover{
+    background-color: #4497eb;
+    scale: 1.02;
+}
+/* Hide the default radio button */
+.newRadio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button appearance */
+.newRadio label {
+    
+display: inline-block;
+position: relative;
+padding-left: 25px;
+margin-right: 15px; /* Space between radio buttons */
+cursor: pointer;
+font-size: 16px;
+line-height: 20px;
+color: #fff; /* Change this to your desired text color */
+}
+
+/* Style the custom radio button circle */
+.newRadio label::before {
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+border: 2px solid #fffefe; /* Border color */
+background-color: #333; /* Background color */
+transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* When the radio button is checked, style the inner dot */
+.newRadio input[type="radio"]:checked + label::after {
+content: "";
+position: absolute;
+left: 5px;
+top: 5px;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background-color: #d49629; /* Dot color */
+}
+
+/* When the radio button is checked, change the border color */
+.newRadio input[type="radio"]:checked + label::before {
+border-color: #d49629; /* Border color when checked */
+}
+
+/* Optional: Add hover effect */
+.newRadio label:hover::before {
+border-color: #d49629;
+}
+
+
+
+
+
+/* This is where the style for input type text comes in */
+
+
+.newAmount,
+.newDescription {
+  padding: 0.4em;
+  margin: 10px 0; /* Space between inputs */
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 2px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #2c2c2c; /* Background color */
+  color: #fff; /* Text color */
+  outline: none; /* Remove default outline on focus */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Add a box shadow and change border color when focused */
+.newAmount:focus,
+.newDescription:focus {
+  border-color: #d49629; /* Border color on focus */
+  box-shadow: 0 0 5px rgb(158, 107, 19, 0.5)/* Shadow effect on focus */
+}
+
+/* Placeholder styling */
+.newAmount::placeholder,
+.newDescription::placeholder {
+    color: #888888; /* Placeholder text color */
+    opacity: 1; /* Ensure placeholder is visible */
+}
+
+/* Optional: Add hover effect */
+.newAmount:hover,
+.newDescription:hover {
+    border-color: #d49629; /* Border color on hover */
+}
+
+
+/* This is the styling for the dropdown */
+
+
+.selectMonth select {
+    width: 100%;
+    height: 2em;
+    padding: 5px; /* Add padding inside the select box */
+    font-size: 16px; /* Make the text a bit larger */
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #2c2c2c; /* Background color */
+    color: #fff; /* Text color */
+    appearance: none; /* Remove default arrow styling */
+    -webkit-appearance: none; /* Remove default arrow styling for Safari */
+    -moz-appearance: none; /* Remove default arrow styling for Firefox */
+    cursor: pointer; /* Change cursor to pointer */
+}
+  
+.selectMonth select:focus {
+    border-color: #d49629; /* Border color on focus */
+    box-shadow: 0 0 5px rgb(212, 150, 41, 0.5); /* Shadow effect on focus */
+    outline: none; /* Remove default outline */
+}
+  
+.selectMonth option {
+    background-color: #2c2c2c; /* Background color of options */
+    color: #fff; /* Text color */
+    padding: 5px; /* Padding inside the options */
+}
+
+
+
+
+
+
+
+
+
+.radioAndamount{
+    display: flex;
+    align-items: center;
+    height: 2.5em;
+}
+.descAndradioAndamount{
+    display: flex;
+    flex-direction: column;
+    height: 2em;
+    width: 30%;
+    margin-right: 2em;
+}
+.newForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1.5em;
+    height: 50%;
+}
+.newSubmit{
+    position: relative;
+    top: 1.25em;
+    
+    margin-left: 2em;
+}
+
+.graphAndSelecter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.selectMonth{
+    display: flex;
+    position: relative;
+    right: 3%;
+    top: 7%;
+    align-self: flex-end;
+    width: 15em;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectMonth > label{
+    width: 100%;
+    height: 2em;
+    padding: 5px; /* Add padding inside the select box */
+    font-size: 0.8em; /* Make the text a bit larger */
+    font-weight: 550;
+    color: #fff; /* Text color */
+    appearance: none; /* Remove default arrow styling */
+    -webkit-appearance: none; /* Remove default arrow styling for Safari */
+    -moz-appearance: none; /* Remove default arrow styling for Firefox */
+    cursor: pointer;
+}
+.myChart{
+    position: relative;
+    top: 1%;
+}
